@@ -1,0 +1,9 @@
+<!-- How a claude.ai widget uses the kit: one container, one spec list, one loader. -->
+<div id="q"></div>
+<script>
+(function(){
+  const S=[{type:'nums',title:'Bitcoin fell again',items:[{v:'−5.9%',l:'IBIT',c:'clay'}]}];
+  const go=()=>QD.draw('q',S);
+  if(window.QD)go();else{const e=document.createElement('script');e.src='https://cdn.jsdelivr.net/gh/eldenring2004/quiet-draw@v1/qd.js';e.onload=go;document.head.appendChild(e)}
+})();
+</script>
